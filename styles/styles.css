@@ -8,20 +8,20 @@ body {
   margin: 0 auto;
 }
 .btn {
-    padding: 13px 30px;
-    background: #FF900E;
-border-radius: 8px;
-    color: #ffffff;
-    border: none;
-    font-size: 20px;
-    font-weight: 600;
-  }
+  padding: 13px 30px;
+  background: #ff900e;
+  border-radius: 8px;
+  color: #ffffff;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+}
 
 /* -------------Banner section ----------*/
 .banner {
   background: rgba(255, 144, 14, 0.1);
   padding-top: 30px;
-  
+
   padding-bottom: 30px;
 }
 
@@ -49,33 +49,68 @@ nav .nav-bar-heading a {
 }
 
 /* banner descrpition */
-.abc{
-    display: flex;
-    justify-content: center;
+.banner-about {
+  display: flex;
+  justify-content: center;
 }
-.banner-container{
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+  text-align: center;
+  row-gap: 30px;
+}
+.banner-content img {
+  width: 100%;
+  border-radius: 8px;
+}
+.banner-content .banner-title h1 {
+  font-weight: 700;
+  font-size: 64px;
+  margin: 0;
+}
+.banner-container .banner-title p {
+  color: #727272;
+  margin: 0;
+  padding: 10px;
+}
+
+/* -------------Feature section ----------*/
+.features{
+    padding: 85px 0;
+}
+.feature-content{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    width: 65%;
-    text-align: center;
-    row-gap: 30px;
-    /* align-items: center; */
+    align-items: center;
+    gap: 70px;
+
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr); */
 
 }
-.banner-container img{
-    /* width: 890px;
-height: 405px; */
+
+
+.feature-images{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3px;
+    column-gap: 3px;
+    width: 30%;
+    
+}
+.feature-description {
+    
+    width: 30%;
+
+
+
+}
+
+
+.feature-content .feature-images img{
 width: 100%;
-border-radius: 8px;
-}
-.banner-container .banner-title h2{
-    font-weight: 700;
-    font-size: 64px;
-    margin: 0;
-}
-.banner-container .banner-title p{
-    color: #727272;
-    margin: 0;
-    padding: 10px;
+border-radius: 5px;
 }
