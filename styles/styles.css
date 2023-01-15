@@ -221,7 +221,7 @@ nav ul {
   padding: 6px;
   width: 200px;
   height: 200px;
-  transition: width 1s;
+  transition: width 0.2s;
 }
 .card:hover {
   border: 2px solid #ff1e0e;
@@ -229,19 +229,19 @@ nav ul {
 
 }
 /* our sponsors section */
-.our-sponsors {
-  padding: 90px 0 30px;
+.our-sponsors, .our-partners {
+  padding: 90px 0 20px;
 
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
 }
-.our-sponsors-container {
+.our-sponsors-container, .our-partners-container {
   grid-column: 2;
   text-align: center;
 }
 /* .sponsors images section */
 .sponsors-images {
-  padding: 40px 0px 90px;
+  padding: 40px 0px 40px;
 
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
@@ -251,10 +251,29 @@ nav ul {
   display: flex;
   justify-content: space-between;
 }
-
 .sponsors-images img {
   filter: grayscale(100%);
 }
+
+/* partners images section */
+
+.partners-images{
+  padding: 20px 0px 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+}
+.partners-images-container{
+  grid-column: 2;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.partners-images img{
+  height: 30px;
+  width: 30px;
+}
+
 /* footer section  */
 footer {
   display: grid;
@@ -350,5 +369,11 @@ footer .footer {
     flex-direction: column;
     row-gap: 28px;
     grid-column: 1;
+  }
+  .our-partners{
+    padding: 0;
+  }
+  .partners-images{
+    padding: 0px 0px 40px;
   }
 }
