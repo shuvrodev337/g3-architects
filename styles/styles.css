@@ -1,7 +1,6 @@
 /* --------------- Fonts --------------- */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 
-
 /* ------------ Common styles--------- */
 body {
   font-family: "Work Sans", sans-serif;
@@ -16,7 +15,13 @@ body {
   font-size: 20px;
   font-weight: 600;
 }
-
+p,
+.ash-color {
+  color: #727272;
+}
+.yellow-color {
+  color: #ff900e;
+}
 /* -------------Banner section ----------*/
 .banner {
   background: rgba(255, 144, 14, 0.1);
@@ -71,46 +76,85 @@ nav .nav-bar-heading a {
   margin: 0;
 }
 .banner-container .banner-title p {
-  color: #727272;
   margin: 0;
   padding: 10px;
 }
 
-/* -------------Feature section ----------*/
-.features{
-    padding: 85px 0;
+/* -------------Features Quick List section ----------*/
+.features-quick-list {
+  padding: 85px 0;
 }
-.feature-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-
-    /* display: grid;
-    grid-template-columns: repeat(4,1fr); */
-
+.feature-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
 }
 
-
-.feature-images{
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 3px;
-    column-gap: 3px;
-    width: 30%;
-    
+.feature-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 16px;
+  column-gap: 16px;
+  width: 30%;
 }
 .feature-description {
-    
-    width: 30%;
-
-
-
+  width: 30%;
 }
 
+.feature-content .feature-images img {
+  width: 100%;
+  border-radius: 5px;
+}
+.feature-content .feature-description h1 {
+  font-weight: 500;
+  font-size: 45px;
+}
 
-.feature-content .feature-images img{
-width: 100%;
-border-radius: 5px;
+/* ----------Features container section----------- */
+.features-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 100px;
+}
+
+.features-love-enjoy {
+  width: 39%;
+}
+.features-container h2 {
+  font-weight: 700;
+  font-size: 39px;
+  padding-left: 10px;
+}
+.verticalLine {
+  border-left: thick solid #ff900e;
+}
+.features-architect-image {
+  width: 30%;
+  padding-bottom: 42px;
+}
+.features-architect-image img {
+  width: 100%;
+}
+.feature-experince {
+  position: absolute;
+  right: 28%;
+  width: 16%;
+  height: 25%;
+  padding: 14px 14px;
+  background: #ff900e;
+  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+}
+.feature-experince h3 {
+  font-weight: 700;
+  font-size: 39px;
+  margin: 0;
+}
+.feature-experince p {
+  font-size: 20px;
+  color: #ffffff;
 }
