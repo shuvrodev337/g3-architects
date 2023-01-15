@@ -236,7 +236,20 @@ nav ul {
 }
 /* footer section  */
 footer {
+
+ 
+  display: grid;
+grid-template-columns: 1fr 8fr 1fr;
+
+}
+footer .footer{
+  /* align-items: center; */
   text-align: center;
+  grid-column: 2;
+  background: rgba(255, 144, 14, 0.1);
+  border-radius: 5px;
+  font-weight: 400;
+/* font-size: 20px; */
 }
 
 /* -----------------------responsive section--------------------------- 
@@ -309,6 +322,7 @@ footer {
   .sponsors-images {
     grid-template-columns: 1fr;
     justify-items: center;
+    padding-bottom: 60px;
   }
 
   .sponsors-images-container {
