@@ -311,5 +311,18 @@ display: none;
     row-gap:28px;
     grid-column: 1;
   }
+  .our-sponsors{
+    padding: 60px 0 20px;
+  }
+.sponsors-images{
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+  .sponsors-images-container{
+    flex-direction: column;
+    row-gap:28px;
+    grid-column: 1;
+  }
   
 }
