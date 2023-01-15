@@ -131,6 +131,10 @@ nav .nav-bar-heading a {
 .verticalLine {
   border-left: thick solid #ff900e;
 }
+.box-card {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 5px;
+}
 .features-architect-image {
   width: 33%;
   padding-bottom: 3%;
@@ -164,11 +168,6 @@ nav .nav-bar-heading a {
 
 
 /* -----------------some facts section ------------- */
-/* .some-facts{
-padding: 90px 0;
-display: grid;
-grid-template-columns: 1fr 8fr 1fr;
-} */
 
 .some-facts{
 padding: 90px 0;
@@ -192,7 +191,16 @@ grid-template-columns: 1fr 8fr 1fr;
   justify-content: space-around;
   text-align: center;
 }
-
+.card{
+  border: 2px solid #ff900e;
+  border-radius: 5px;
+  padding: 6px;
+  width: 200px;
+  height: 200px;
+}
+.card:hover{
+  border: 2px solid #ff1e0e;
+}
 /* our sponsors section */
 .our-sponsors{
 padding: 90px 0;
@@ -222,7 +230,3 @@ footer{
   text-align: center;
 }
 
-.box-card {
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  padding: 5px;
-}
